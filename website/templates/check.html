@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Check{% endblock %}
+
+{% block content %}
+<h1>Check</h1>
+{{ text }}
+{{ user }}
+
+{% if boolean %}
+Now, it is true
+{% endif %}
+
+{% if fruit == 'apple' %}
+it is apple
+{% elif fruit == 'orange' %}
+it is orange
+{% else %}
+it is unknown
+{% endif %}
+
+{% endblock %}
